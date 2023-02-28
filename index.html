@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mb-5">
+        <h1 class="fw-bolder text-center my-5">Product Managment System</h1>
+
+        <label class="fw-bolder my-1" for="productNameInput">Product Name :</label>
+        <input class="form-control mb-4" id="productNameInput"  type="text">
+
+        <label class="fw-bolder my-1" for="productPriceInput">Product Price :</label>
+        <input class="form-control mb-4" id="productPriceInput"  type="number">
+
+        <label class="fw-bolder my-1" for="productCategoryInput">Product Category :</label>
+        <input class="form-control mb-4" id="productCategoryInput"  type="text">
+
+        <label class="fw-bolder my-1" for="productDescInput">Product Description :</label>
+        <textarea class="form-control mb-4"  id="productDescInput" type="text"></textarea>
+        <button class="btn btn-outline-info" onclick="addProduct()">Add Product</button>
+    </div>
+    <div class="conatiner bg-light">
+        <form class="d-flex w-50 mx-auto">
+            <input class="form-control me-2" type="search" placeholder="Search by Product Name">
+        </form>
+        <table class="table mt-4 w-75 mx-auto">
+            <thead class="text-center" >
+                <th>Index Code</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
